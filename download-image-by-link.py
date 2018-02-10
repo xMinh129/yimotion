@@ -5,7 +5,7 @@ import os
 
 
 def store_raw_images():
-    neg_images_link = 'http://image-net.org/api/text/imagenet.synset.geturls?wnid=n09287968'
+    neg_images_link = 'http://image-net.org/api/text/imagenet.synset.geturls?wnid=n03653740'
     neg_image_urls = urllib.request.urlopen(neg_images_link).read().decode()
     pic_num = 2447
 

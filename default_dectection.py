@@ -37,7 +37,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 # this is the cascade we just made. Call what you want
-head_cascade = cv2.CascadeClassifier('./data/haarfacecascade10stage.xml')
+head_cascade = cv2.CascadeClassifier('./data/right_face_cascade.xml')
 
 cap = cv2.VideoCapture(0)
 
