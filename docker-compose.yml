@@ -1,0 +1,22 @@
+# docker-compose.yml (tag: v4)
+web:
+  build: .
+  ports:
+  - "3000:3000"
+  volumes:
+  - .:/usr/src/app/:rw
+  environment:
+  - NODE_ENV=dev
+  # Before you run this file for the first time, make sure
+  # you remove node_modules/ folders in your host machine
+  command: >
+    sh -c '
+    if test -d node_modules;
+    then
+      echo node_modules_exists ;
+    else
+      cp -a /tmp/node_modules /usr/src/app/medslack;
+    fi &&
+    npm install &&
+     /usr/local/bin/node ./app.js && npm start
+    '
