@@ -1,0 +1,18 @@
+{
+  "development": {
+    "debug": true,
+    "skipAuth": false,
+    "sqlDb": {
+      "hostName": "yimotiondetlta.database.windows.net",
+      "dbName": "yimotion",
+      "userName": "yimotion_jw_admin@yimotiondetlta",
+      "password": "learning@129"
+    },
+    "mongoDb": {
+      "mongoClient": "mongodb://jingwendelta:x1WCurGwMbUe8pJY2mumBN2OgOTEpiL6UQXDwVNU7eiLxndDEvFolCQU6jDGUWcqF9wAuxQYM4yE8hqURziIoA==@jingwendelta.documents.azure.com:10255/yimotiondelta?ssl=true"
+    }
+  },
+  "staging": {},
+  "production": {}
+}
+

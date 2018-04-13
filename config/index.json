@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://localhost/yimotion",
+  "jwtSecret": "a secret phrase!!"
+}
